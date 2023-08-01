@@ -1,9 +1,11 @@
 import { useState, useEffect, useContext, createContext, useMemo } from 'react';
 import {
-  signInWithPopup,
-  GoogleAuthProvider,
+  signInWithRedirect,
+  EmailAuthProvider,
   onAuthStateChanged,
-  signOut as signOutFirebase
+  signOut as signOutFirebase,
+  GoogleAuthProvider,
+  signInWithPopup
 } from 'firebase/auth';
 import {
   doc,

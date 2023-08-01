@@ -1,0 +1,147 @@
+[debug] [2023-07-30T13:58:48.621Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T13:58:48.626Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\God -02.04\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use strings-a2531
+[debug] [2023-07-30T13:58:48.627Z] CLI Version:   12.4.6
+[debug] [2023-07-30T13:58:48.628Z] Platform:      win32
+[debug] [2023-07-30T13:58:48.628Z] Node Version:  v20.4.0
+[debug] [2023-07-30T13:58:48.628Z] Time:          Sun Jul 30 2023 17:28:48 GMT+0330 (Iran Standard Time)
+[debug] [2023-07-30T13:58:48.628Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T13:58:48.714Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T13:58:48.715Z] > authorizing via signed-in user (mhkweb.p@gmail.com)
+[debug] [2023-07-30T13:58:48.717Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/strings-a2531 [none]
+[debug] [2023-07-30T13:58:49.474Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/strings-a2531 200
+[debug] [2023-07-30T13:58:49.475Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/strings-a2531 {"projectId":"strings-a2531","projectNumber":"143251220617","displayName":"Strings","name":"projects/strings-a2531","resources":{"hostingSite":"strings-a2531","storageBucket":"strings-a2531.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE","etag":"1_bf6c9a27-9935-46e5-b7a9-1dcf3e937c45"}
+[info] Now using project strings-a2531
+[debug] [2023-07-30T13:58:54.989Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\God -02.04\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-30T13:59:03.601Z] ----------------------------------------------------------------------
+[debug] [2023-07-30T13:59:03.604Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\God -02.04\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --except functions
+[debug] [2023-07-30T13:59:03.604Z] CLI Version:   12.4.6
+[debug] [2023-07-30T13:59:03.605Z] Platform:      win32
+[debug] [2023-07-30T13:59:03.605Z] Node Version:  v20.4.0
+[debug] [2023-07-30T13:59:03.605Z] Time:          Sun Jul 30 2023 17:29:03 GMT+0330 (Iran Standard Time)
+[debug] [2023-07-30T13:59:03.605Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-30T13:59:03.674Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-30T13:59:03.674Z] > authorizing via signed-in user (mhkweb.p@gmail.com)
+[debug] [2023-07-30T13:59:03.674Z] [iam] checking project strings-a2531 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-07-30T13:59:03.676Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/strings-a2531:testIamPermissions [none]
+[debug] [2023-07-30T13:59:03.677Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/strings-a2531:testIamPermissions x-goog-quota-user=projects/strings-a2531
+[debug] [2023-07-30T13:59:03.677Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/strings-a2531:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-07-30T13:59:04.553Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/strings-a2531:testIamPermissions 200
+[debug] [2023-07-30T13:59:04.553Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/strings-a2531:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[info] 
+[info] === Deploying to 'strings-a2531'...
+[info] 
+[info] i  deploying storage, firestore 
+[debug] [2023-07-30T13:59:04.558Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/strings-a2531 [none]
+[debug] [2023-07-30T13:59:05.212Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/strings-a2531 200
+[debug] [2023-07-30T13:59:05.212Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/strings-a2531 {"projectId":"strings-a2531","projectNumber":"143251220617","displayName":"Strings","name":"projects/strings-a2531","resources":{"hostingSite":"strings-a2531","storageBucket":"strings-a2531.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE","etag":"1_bf6c9a27-9935-46e5-b7a9-1dcf3e937c45"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2023-07-30T13:59:05.221Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test [none]
+[debug] [2023-07-30T13:59:05.221Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test [omitted]
+[debug] [2023-07-30T13:59:06.548Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test 200
+[debug] [2023-07-30T13:59:06.548Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test {}
+[info] +  firebase.storage: rules file storage.rules compiled successfully 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2023-07-30T13:59:06.556Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test [none]
+[debug] [2023-07-30T13:59:06.556Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test [omitted]
+[debug] [2023-07-30T13:59:07.353Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test 200
+[debug] [2023-07-30T13:59:07.353Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2023-07-30T13:59:07.355Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases pageSize=10&pageToken=
+[debug] [2023-07-30T13:59:08.212Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases 200
+[debug] [2023-07-30T13:59:08.212Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases {"releases":[{"name":"projects/strings-a2531/releases/cloud.firestore","rulesetName":"projects/strings-a2531/rulesets/a8e49d09-bd26-41bd-85ae-32bdb283313c","createTime":"2023-07-30T13:49:45.018676Z","updateTime":"2023-07-30T13:49:45.018676Z"},{"name":"projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com","rulesetName":"projects/strings-a2531/rulesets/8d315cfb-e169-49aa-bac6-0eb3ede971c4","createTime":"2023-07-30T13:50:52.115484Z","updateTime":"2023-07-30T13:50:52.115484Z"}]}
+[debug] [2023-07-30T13:59:08.229Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets/8d315cfb-e169-49aa-bac6-0eb3ede971c4 [none]
+[debug] [2023-07-30T13:59:08.563Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets/8d315cfb-e169-49aa-bac6-0eb3ede971c4 200
+[debug] [2023-07-30T13:59:08.564Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets/8d315cfb-e169-49aa-bac6-0eb3ede971c4 [omitted]
+[info] i  storage: uploading rules storage.rules... 
+[debug] [2023-07-30T13:59:08.568Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets [none]
+[debug] [2023-07-30T13:59:08.568Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets [omitted]
+[debug] [2023-07-30T13:59:09.043Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets 200
+[debug] [2023-07-30T13:59:09.043Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets {"name":"projects/strings-a2531/rulesets/ac115f1e-4026-4ec5-a2d0-9a449d790b47","source":{"files":[{"content":"rules_version = '2';\r\nservice firebase.storage {\r\n  match /b/{bucket}/o {\r\n    function isAdmin() {\r\n      return request.auth.uid == 'Twt0A27bx9YcG4vu3RTsR7ifJzf2';\r\n    }\r\n    \r\n    function isAuthorized(userId) {\r\n      return request.auth != null && (userId == request.auth.uid || isAdmin());\r\n    }\r\n  \r\n    function isValidImage() {\r\n      return request.resource.contentType.matches('image/.*')\r\n             && request.resource.size < 20 * 1024 * 1024;\r\n    }\r\n\r\n    match /images/{userId}/{fileName} {\r\n      allow read: if request.auth != null;\r\n      allow create: if isAuthorized(userId) && isValidImage();\r\n      allow update, delete: if false;\r\n    }\r\n  }\r\n}\r\n","name":"storage.rules"}]},"createTime":"2023-07-30T13:59:07.953951Z","metadata":{"services":["firebase.storage"]}}
+[debug] [2023-07-30T13:59:09.043Z] [rules] created ruleset projects/strings-a2531/rulesets/ac115f1e-4026-4ec5-a2d0-9a449d790b47
+[info] i  firestore: deploying indexes... 
+[debug] [2023-07-30T13:59:09.050Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases pageSize=10&pageToken=
+[debug] [2023-07-30T13:59:09.051Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-07-30T13:59:09.844Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases 200
+[debug] [2023-07-30T13:59:09.844Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases {"releases":[{"name":"projects/strings-a2531/releases/cloud.firestore","rulesetName":"projects/strings-a2531/rulesets/a8e49d09-bd26-41bd-85ae-32bdb283313c","createTime":"2023-07-30T13:49:45.018676Z","updateTime":"2023-07-30T13:49:45.018676Z"},{"name":"projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com","rulesetName":"projects/strings-a2531/rulesets/8d315cfb-e169-49aa-bac6-0eb3ede971c4","createTime":"2023-07-30T13:50:52.115484Z","updateTime":"2023-07-30T13:50:52.115484Z"}]}
+[debug] [2023-07-30T13:59:09.845Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets/a8e49d09-bd26-41bd-85ae-32bdb283313c [none]
+[debug] [2023-07-30T13:59:10.133Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets/a8e49d09-bd26-41bd-85ae-32bdb283313c 200
+[debug] [2023-07-30T13:59:10.134Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets/a8e49d09-bd26-41bd-85ae-32bdb283313c [omitted]
+[info] i  firestore: uploading rules firestore.rules... 
+[debug] [2023-07-30T13:59:10.135Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets [none]
+[debug] [2023-07-30T13:59:10.136Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets [omitted]
+[debug] [2023-07-30T13:59:11.151Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets 200
+[debug] [2023-07-30T13:59:11.151Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/strings-a2531/rulesets {"name":"projects/strings-a2531/rulesets/2e3f307c-e5ac-4bed-9b97-23901449a66a","source":{"files":[{"content":"rules_version = '2';\r\nservice cloud.firestore {\r\n  match /databases/{database}/documents {\r\n    function isAdmin() {\r\n      return request.auth.uid == 'Twt0A27bx9YcG4vu3RTsR7ifJzf2';\r\n    }\r\n\r\n    function isAuthorized(userId) {\r\n      return request.auth != null && (userId == request.auth.uid || isAdmin());\r\n    }\r\n\r\n    function isValidText(text) {\r\n      return text is string || text == null;\r\n    }\r\n\r\n    function isValidImages(images) {\r\n      return (images is list && images.size() <= 4) || images == null;\r\n    }\r\n    \r\n    match /tweets/{tweetId} {\r\n      allow read, update: if request.auth != null;\r\n      allow create: if isAuthorized(request.resource.data.createdBy)\r\n                       && isValidText(request.resource.data.text)\r\n                       && isValidImages(request.resource.data.images);\r\n      allow delete: if isAuthorized(resource.data.createdBy);\r\n    }\r\n\r\n    match /users/{document=**} {\r\n      allow read, write: if request.auth != null;\r\n    }\r\n  }\r\n}\r\n","name":"firestore.rules"}]},"createTime":"2023-07-30T13:59:09.989359Z","metadata":{"services":["cloud.firestore"]}}
+[debug] [2023-07-30T13:59:11.151Z] [rules] created ruleset projects/strings-a2531/rulesets/2e3f307c-e5ac-4bed-9b97-23901449a66a
+[debug] [2023-07-30T13:59:11.441Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-07-30T13:59:11.442Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-07-30T13:59:11.443Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-07-30T13:59:12.066Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-07-30T13:59:12.067Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/strings-a2531/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-07-30T13:59:12.067Z] Creating new index: {"collectionGroup":"tweets","queryScope":"COLLECTION","fields":[{"fieldPath":"createdBy","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]}
+[debug] [2023-07-30T13:59:12.067Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes [none]
+[debug] [2023-07-30T13:59:12.067Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"fields":[{"fieldPath":"createdBy","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}],"queryScope":"COLLECTION"}
+[debug] [2023-07-30T13:59:12.731Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes 200
+[debug] [2023-07-30T13:59:12.731Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"name":"projects/strings-a2531/databases/(default)/operations/S0U0aFhqT2dBQ0lDDCoDIGQzOTQ1NmNmNzIzNS1jNWQ5LTEwZDQtNTA5OS1iZTFjN2Q1YiQac2VuaWxlcGlwCQpBEg","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.IndexOperationMetadata","startTime":"2023-07-30T13:59:11.549535Z","index":"projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes/CICAgOjXh4EK","state":"INITIALIZING"}}
+[debug] [2023-07-30T13:59:12.731Z] Creating new index: {"collectionGroup":"tweets","queryScope":"COLLECTION","fields":[{"fieldPath":"createdBy","order":"ASCENDING"},{"fieldPath":"images","order":"ASCENDING"}]}
+[debug] [2023-07-30T13:59:12.731Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes [none]
+[debug] [2023-07-30T13:59:12.732Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"fields":[{"fieldPath":"createdBy","order":"ASCENDING"},{"fieldPath":"images","order":"ASCENDING"}],"queryScope":"COLLECTION"}
+[debug] [2023-07-30T13:59:13.374Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes 200
+[debug] [2023-07-30T13:59:13.375Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"name":"projects/strings-a2531/databases/(default)/operations/S01vcFVpSmdBQ0lDDCoDIGI3NzMxNjE1OGQ5YS1mOTVhLWVhNTQtZmY5NS1lMzAyOTMyYiQac2VuaWxlcGlwCQpBEg","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.IndexOperationMetadata","startTime":"2023-07-30T13:59:12.199377Z","index":"projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes/CICAgJiUpoMK","state":"INITIALIZING"}}
+[debug] [2023-07-30T13:59:13.375Z] Creating new index: {"collectionGroup":"tweets","queryScope":"COLLECTION","fields":[{"fieldPath":"parent","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]}
+[debug] [2023-07-30T13:59:13.376Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes [none]
+[debug] [2023-07-30T13:59:13.376Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"fields":[{"fieldPath":"parent","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}],"queryScope":"COLLECTION"}
+[debug] [2023-07-30T13:59:13.924Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes 200
+[debug] [2023-07-30T13:59:13.924Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"name":"projects/strings-a2531/databases/(default)/operations/S0FKazNpT2dBQ0lDDCoDIDU0ODM4NDFlMDg4YS1jNzI4LWVlMzQtYjUzOC1lMGE4ODE3MSQac2VuaWxlcGlwCQpBEg","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.IndexOperationMetadata","startTime":"2023-07-30T13:59:12.758966Z","index":"projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes/CICAgOi3kJAK","state":"INITIALIZING"}}
+[debug] [2023-07-30T13:59:13.924Z] Creating new index: {"collectionGroup":"tweets","queryScope":"COLLECTION","fields":[{"fieldPath":"parent.id","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}]}
+[debug] [2023-07-30T13:59:13.925Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes [none]
+[debug] [2023-07-30T13:59:13.925Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"fields":[{"fieldPath":"parent.id","order":"ASCENDING"},{"fieldPath":"createdAt","order":"DESCENDING"}],"queryScope":"COLLECTION"}
+[debug] [2023-07-30T13:59:14.506Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes 200
+[debug] [2023-07-30T13:59:14.506Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"name":"projects/strings-a2531/databases/(default)/operations/S0E0MW1pSmdBQ0lDDCoDIDM1YTM2NGE0OWIwNS1hMjhiLWRlMjQtMTRlOS1kZTg0MmRjMyQac2VuaWxlcGlwCQpBEg","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.IndexOperationMetadata","startTime":"2023-07-30T13:59:13.337244Z","index":"projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes/CICAgJim14AK","state":"INITIALIZING"}}
+[debug] [2023-07-30T13:59:14.506Z] Creating new index: {"collectionGroup":"tweets","queryScope":"COLLECTION","fields":[{"fieldPath":"userLikes","arrayConfig":"CONTAINS"},{"fieldPath":"createdAt","order":"DESCENDING"}]}
+[debug] [2023-07-30T13:59:14.507Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes [none]
+[debug] [2023-07-30T13:59:14.507Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"fields":[{"fieldPath":"userLikes","arrayConfig":"CONTAINS"},{"fieldPath":"createdAt","order":"DESCENDING"}],"queryScope":"COLLECTION"}
+[debug] [2023-07-30T13:59:15.218Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes 200
+[debug] [2023-07-30T13:59:15.218Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"name":"projects/strings-a2531/databases/(default)/operations/S0lvOUZqSmdBQ0lDDCoDIDE1ZmQ4ZGJhMTA3Yi0zNjlhLWUyMTQtMjZhOC0yMmQxNGZjZiQac2VuaWxlcGlwCQpBEg","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.IndexOperationMetadata","startTime":"2023-07-30T13:59:14.043147Z","index":"projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes/CICAgJjF9oIK","state":"INITIALIZING"}}
+[debug] [2023-07-30T13:59:15.218Z] Creating new index: {"collectionGroup":"tweets","queryScope":"COLLECTION","fields":[{"fieldPath":"userRetweets","arrayConfig":"CONTAINS"},{"fieldPath":"createdBy","order":"ASCENDING"}]}
+[debug] [2023-07-30T13:59:15.219Z] >>> [apiv2][query] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes [none]
+[debug] [2023-07-30T13:59:15.219Z] >>> [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"fields":[{"fieldPath":"userRetweets","arrayConfig":"CONTAINS"},{"fieldPath":"createdBy","order":"ASCENDING"}],"queryScope":"COLLECTION"}
+[debug] [2023-07-30T13:59:15.773Z] <<< [apiv2][status] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes 200
+[debug] [2023-07-30T13:59:15.773Z] <<< [apiv2][body] POST https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes {"name":"projects/strings-a2531/databases/(default)/operations/S0U0ejdqSmdBQ0lDDCoDIDI5ZTk3MGFjYmZhYy1kNDRhLTU1NzQtMzgxNS1kNTlmNWEwOSQac2VuaWxlcGlwCQpBEg","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.IndexOperationMetadata","startTime":"2023-07-30T13:59:14.615099Z","index":"projects/strings-a2531/databases/(default)/collectionGroups/tweets/indexes/CICAgJj7z4EK","state":"INITIALIZING"}}
+[debug] [2023-07-30T13:59:15.773Z] Updating field override: {"collectionGroup":"bookmarks","fieldPath":"id","indexes":[{"order":"ASCENDING","queryScope":"COLLECTION"},{"order":"DESCENDING","queryScope":"COLLECTION"},{"arrayConfig":"CONTAINS","queryScope":"COLLECTION"},{"order":"ASCENDING","queryScope":"COLLECTION_GROUP"}]}
+[debug] [2023-07-30T13:59:15.775Z] >>> [apiv2][query] PATCH https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/bookmarks/fields/id updateMask=indexConfig
+[debug] [2023-07-30T13:59:15.775Z] >>> [apiv2][body] PATCH https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/bookmarks/fields/id {"indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"id","order":"ASCENDING"}]},{"queryScope":"COLLECTION","fields":[{"fieldPath":"id","order":"DESCENDING"}]},{"queryScope":"COLLECTION","fields":[{"fieldPath":"id","arrayConfig":"CONTAINS"}]},{"queryScope":"COLLECTION_GROUP","fields":[{"fieldPath":"id","order":"ASCENDING"}]}]}}
+[debug] [2023-07-30T13:59:16.304Z] <<< [apiv2][status] PATCH https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/bookmarks/fields/id 200
+[debug] [2023-07-30T13:59:16.304Z] <<< [apiv2][body] PATCH https://firestore.googleapis.com/v1/projects/strings-a2531/databases/(default)/collectionGroups/bookmarks/fields/id {"name":"projects/strings-a2531/databases/(default)/operations/AyA1NDgwNjM4ZmI3NjItZGE0YS0xNTI0LTJlMzQtY2QxN2QzZTkkGnNlbmlsZXBpcAkKMxI","metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.FieldOperationMetadata","startTime":"2023-07-30T13:59:15.131950Z","field":"projects/strings-a2531/databases/(default)/collectionGroups/bookmarks/fields/id","indexConfigDeltas":[{"changeType":"ADD","index":{"queryScope":"COLLECTION_GROUP","fields":[{"fieldPath":"id","order":"ASCENDING"}]}}],"state":"INITIALIZING"}}
+[info] +  firestore: deployed indexes in firestore.indexes.json successfully for (default) database 
+[debug] [2023-07-30T13:59:16.306Z] [rules] releasing firebase.storage/strings-a2531.appspot.com with ruleset projects/strings-a2531/rulesets/ac115f1e-4026-4ec5-a2d0-9a449d790b47
+[debug] [2023-07-30T13:59:16.307Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com [none]
+[debug] [2023-07-30T13:59:16.307Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com {"release":{"name":"projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com","rulesetName":"projects/strings-a2531/rulesets/ac115f1e-4026-4ec5-a2d0-9a449d790b47"}}
+[debug] [2023-07-30T14:00:17.681Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com 200
+[debug] [2023-07-30T14:00:17.682Z] <<< [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com {"name":"projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com","rulesetName":"projects/strings-a2531/rulesets/ac115f1e-4026-4ec5-a2d0-9a449d790b47","createTime":"2023-07-30T13:50:52.115484Z","updateTime":"2023-07-30T14:00:16.458199Z"}
+[debug] [2023-07-30T14:00:17.683Z] [rules] updated release projects/strings-a2531/releases/firebase.storage/strings-a2531.appspot.com
+[info] +  storage: released rules storage.rules to firebase.storage 
+[debug] [2023-07-30T14:00:17.684Z] [rules] releasing cloud.firestore/(default) with ruleset projects/strings-a2531/rulesets/2e3f307c-e5ac-4bed-9b97-23901449a66a
+[debug] [2023-07-30T14:00:17.685Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/cloud.firestore/(default) [none]
+[debug] [2023-07-30T14:00:17.685Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/cloud.firestore/(default) {"release":{"name":"projects/strings-a2531/releases/cloud.firestore/(default)","rulesetName":"projects/strings-a2531/rulesets/2e3f307c-e5ac-4bed-9b97-23901449a66a"}}
+[debug] [2023-07-30T14:00:18.140Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/cloud.firestore/(default) 200
+[debug] [2023-07-30T14:00:18.140Z] <<< [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/strings-a2531/releases/cloud.firestore/(default) {"name":"projects/strings-a2531/releases/cloud.firestore","rulesetName":"projects/strings-a2531/rulesets/2e3f307c-e5ac-4bed-9b97-23901449a66a","createTime":"2023-07-30T13:49:45.018676Z","updateTime":"2023-07-30T14:00:17.078508Z"}
+[debug] [2023-07-30T14:00:18.140Z] [rules] updated release projects/strings-a2531/releases/cloud.firestore
+[info] +  firestore: released rules firestore.rules to cloud.firestore 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/strings-a2531/overview
+[debug] [2023-07-30T14:00:24.128Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\God -02.04\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
