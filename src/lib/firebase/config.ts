@@ -1,11 +1,11 @@
 const config = {
-  apiKey: process.env.NEXT_PUBLIC_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID
+  apiKey: "AIzaSyAE3kjlepMdiInFjPr0oBjJfQC0b5Ietbs",
+  authDomain: "strings-a2531.firebaseapp.com",
+  projectId: "strings-a2531",
+  storageBucket: "strings-a2531.appspot.com",
+  messagingSenderId: "143251220617",
+  appId: "1:143251220617:web:7bd5e2d365af10d524fe58",
+  measurementId: "G-4EGSL0T20M"
 } as const;
 
 type Config = typeof config;
