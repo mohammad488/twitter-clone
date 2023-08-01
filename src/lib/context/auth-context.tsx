@@ -162,7 +162,7 @@ export function AuthContextProvider({
   const signInWithGoogle = async (): Promise<void> => {
     try {
       const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
+      await signInWithRedirect(auth, provider);
     } catch (error) {
       setError(error as Error);
     }
